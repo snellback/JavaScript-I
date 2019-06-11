@@ -57,26 +57,29 @@ const antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name)
+console.log(mitzi.name);
 // Kennan's ID
-console.log(kevin.name)
+console.log(kevin.name);
 // Keven's email
-console.log(kevin.email)
+console.log(kevin.email);
 // Gannie's name
-console.log(gannie.name)
+console.log(gannie.name);
 // Antonietta's Gender
-console.log(antonietta.gender)
+console.log(antonietta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-function speak(){ 
-  kennan.speak = "Hello, my name is Kennan!";
-  return kennan.speak;
+kennan.speak = function(string) {
+  return "Hello, my name is " + kennan.name + "!"
 }
-console.log(kennan.speak());
+console.log(kennan.speak())
+// kennan.speak + kennan.name + "!"
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-
+antonietta.multiplyNums = function(a,b) {
+  return a * b;
+}
+console.log(antonietta.multiplyNums(3,4))
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
